@@ -11,7 +11,7 @@ export default function User() {
 
             <div className='box'>
 
-                <h2>Nome</h2>
+                <h2>Seu nome</h2>
 
 
                 <input type="text" placeholder="Digite algo" />
