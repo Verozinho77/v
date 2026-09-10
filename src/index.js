@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './index.scss';
 import Evento from './pages/evento/index.jsx';
 import User from './pages/usuario/index.jsx';
 import App from './pages/app/App.js';

@@ -1,23 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+    background: linear-gradient(135deg, #dbeafe, #c7d2fe);
+}
 
+.App {
+    width: 100%;
+    min-height: 100vh;
 
-.App{display: flex;
-    text-align: center;
-    justify-content: center;
+    display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
 
+    gap: 25px;
+    padding: 30px;
 }
 
+.App h1 {
+    color: #1e3a8a;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
 
-a, a:visited a:Link {
+/* Links */
+.App a {
+    width: 250px;
+    padding: 15px;
+
+    background: #ffffff;
+    color: #2563eb;
+
+    text-align: center;
     text-decoration: none;
-    color: black;
+
+    border-radius: 12px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
 }
 
+/* Efeito ao passar o mouse */
+.App a:hover {
+    background: #2563eb;
+    color: #ffffff;
 
-a:hover{
-transform: scale(1.65) ;
-transition: 2s;
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
+}
+
+/* Efeito ao clicar */
+.App a:active {
+    transform: translateY(0);
+}
+
+/* Celular */
+@media (max-width: 600px) {
+
+    .App {
+        padding: 20px;
+    }
+
+    .App h1 {
+        font-size: 28px;
+    }
+
+    .App a {
+        width: 90%;
+        max-width: 250px;
+    }
 }

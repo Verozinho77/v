@@ -1,67 +1,167 @@
+
 import './index.scss'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-export default function User() {
+export default function Funcionario() {
 
-   
+    const [nome, setNome] = useState('');
+    const [mensagem, setMensagem] = useState('PASSE O MOUSE AQUI');
+
+    // Parte 1 - Nome
+    function alterarNome(event) {
+        setNome(event.target.value);
+
+        console.log('Nome digitado:', event.target.value);
+    }
+
+    // Parte 2 - Departamento
+    function alterarDepartamento(event) {
+        if (event.target.value !== '') {
+            alert('Departamento selecionado: ' + event.target.value);
+        }
+    }
+
+    // Parte 3 - Tipo de funcionário
+    function alterarTipo(event) {
+        console.log('Tipo de funcionário:', event.target.value);
+    }
+
+    // Parte 4 - Mouse entrou
+    function mouseEntrou() {
+        setMensagem('O mouse entrou na área!');
+    }
+
+    // Parte 4 - Mouse saiu
+    function mouseSaiu() {
+        setMensagem('O mouse saiu da área!');
+    }
+
+    // Parte 5 - Botão
+    function cadastrar() {
+        alert('Funcionário cadastrado com sucesso!');
+    }
 
     return (
 
-        <div className="usersin">
+        <div className="funcionario">
 
-            <div className='box'>
+            <div className="box">
 
-                <h2>Seu nome</h2>
+                <h2>Cadastro de Funcionário</h2>
+
+                <label>
+                    Nome do funcionário:
+                </label>
+
+                <input
+                    type="text"
+                    placeholder="Digite seu nome"
+                    value={nome}
+                    onChange={alterarNome}
+                />
 
 
-                <input type="text" placeholder="Digite algo" />
+                <label>
+                    Departamento:
+                </label>
 
-                <p>As cores são a forma como os nossos olhos e o cérebro interpretam a luz que reflete nas coisas ao nosso redor. Elas funcionam como uma linguagem silenciosa que transforma o mundo em um lugar vivo e cheio de nuances.</p>
+                <select onChange={alterarDepartamento}>
 
+                    <option value="">Selecione</option>
 
-                <select >
+                    <option value="Administração">
+                        Administração
+                    </option>
 
-                    <option >Escolha uma cor</option>
+                    <option value="Recursos Humanos">
+                        Recursos Humanos
+                    </option>
 
-                    <option >Azul</option>
+                    <option value="Financeiro">
+                        Financeiro
+                    </option>
 
-                    <option >Verde</option>
+                    <option value="Marketing">
+                        Marketing
+                    </option>
 
-                    <option >Vermelho</option>
-
-                    <option >Roxo</option>
-
+                    <option value="TI">
+                        TI
+                    </option>
 
                 </select>
 
-                <div className="soun">
 
-                   <h2>É sua cor preferida</h2>
+                <div className="tipo">
+
+                    <h3>Tipo de funcionário</h3>
 
                     <label>
-                        <input type="radio" name="opcao" />
-                        É minha favorita
+                        <input
+                            type="radio"
+                            name="tipo"
+                            value="Efetivo"
+                            onChange={alterarTipo}
+                        />
+                        Efetivo
                     </label>
 
                     <label>
-                        <input type="radio" name="opcao" />
-                    Não é minha favorita
+                        <input
+                            type="radio"
+                            name="tipo"
+                            value="Temporário"
+                            onChange={alterarTipo}
+                        />
+                        Temporário
                     </label>
 
-                    
+                    <label>
+                        <input
+                            type="radio"
+                            name="tipo"
+                            value="Estagiário"
+                            onChange={alterarTipo}
+                        />
+                        Estagiário
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="tipo"
+                            value="Jovem Aprendiz"
+                            onChange={alterarTipo}
+                        />
+                        Jovem Aprendiz
+                    </label>
+
                 </div>
 
-                <button >Confirmar</button>
+
+                <div
+                    className="mouse"
+                    onMouseEnter={mouseEntrou}
+                    onMouseLeave={mouseSaiu}
+                >
+                    {mensagem}
+                </div>
 
 
-                <Link to="/">Voltar</Link>
+                <button onClick={cadastrar}>
+                    Cadastrar Funcionário
+                </button>
+
+
+                <Link to="/">
+                    Voltar
+                </Link>
+
             </div>
-
 
         </div>
 
     );
 
-
 }
-
