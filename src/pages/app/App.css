@@ -1,0 +1,23 @@
+
+
+
+.App{display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    gap: 20px;
+
+}
+
+
+a, a:visited a:Link {
+    text-decoration: none;
+    color: black;
+}
+
+
+a:hover{
+transform: scale(1.65) ;
+transition: 2s;
+}
