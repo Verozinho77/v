@@ -9,7 +9,7 @@ function App() {
   <Link to="/contato">Contato</Link>
   <Link to="/evento">Evento</Link>
   <Link to="/usuario">Usuario</Link>
-
+  <Link to="/contador">Contador</Link>
 
 
 
