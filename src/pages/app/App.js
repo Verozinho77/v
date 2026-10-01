@@ -10,7 +10,7 @@ function App() {
   <Link to="/evento">Evento</Link>
   <Link to="/usuario">Usuario</Link>
   <Link to="/contador">Contador</Link>
-
+  <Link to="/variestado">Variavel de estado</Link>
 
 
 
