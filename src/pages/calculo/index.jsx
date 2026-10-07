@@ -13,6 +13,21 @@ export default function Calculo() {
         setResultado(Number(valor1) + Number(valor2));
     }
 
+
+    function subtrair() {
+        setResultado(Number(valor1) - Number(valor2));
+    }
+
+    function multiplicar() {
+        setResultado(Number(valor1) * Number(valor2));
+    }
+
+    function dividir() {
+        if (Number(valor2) !== 0) {
+            setResultado(Number(valor1) / Number(valor2));
+        }
+    }
+
     return (
         <div className="secao">
 
@@ -34,6 +49,15 @@ export default function Calculo() {
 
             <button onClick={somar}>
                 Somar
+            </button>
+            <button onClick={subtrair}>
+                Subtrair
+            </button>
+            <button onClick={multiplicar}>
+                Multiplicar
+            </button>
+            <button onClick={dividir}>
+                Dividir
             </button>
 
             <h2>
