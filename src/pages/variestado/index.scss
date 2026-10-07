@@ -136,8 +136,8 @@
 
     padding: 10px 25px;
 
-    background-color: #15499c;
-    color: white;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
 
     border-radius: 8px;
 
@@ -149,7 +149,7 @@
     transition: 0.3s;
 
     &:hover {
-        background-color: #0d3575;
+        background-color: #ffffff;
 
         transform: translateY(-2px);
     }

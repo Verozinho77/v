@@ -1,0 +1,64 @@
+.secao {
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+
+    h1 {
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    input {
+        width: 90%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+    }
+
+    button {
+        width: 95%;
+        padding: 12px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #1d3280;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #152663;
+        }
+    }
+
+    h2 {
+        margin: 25px 0;
+        color: #333;
+    }
+
+    a {
+        color: #1d3280;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.sorvete {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+
+    button {
+        width: 100px;
+        padding: 10px;
+    }
+}

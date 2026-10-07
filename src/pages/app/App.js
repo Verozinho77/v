@@ -11,7 +11,7 @@ function App() {
   <Link to="/usuario">Usuario</Link>
   <Link to="/contador">Contador</Link>
   <Link to="/variestado">Variavel de estado</Link>
-
+  <Link to="/calculo">Calculadora</Link>
 
 
 

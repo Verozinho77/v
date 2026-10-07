@@ -8,6 +8,7 @@ import Contato from './pages/contato/index.jsx';
 import Contador from './pages/contador/index.jsx';
 import Variavel from './pages/variestado/index.jsx';
 import './pages/contador/index.scss';
+import Calculo from './pages/calculo/index.jsx';
 import NotFound from './pages/não encontrado/index.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -24,7 +25,8 @@ root.render(
         <Route path="/usuario" element={<User />} />
         <Route path="/Contador" element={<Contador />} />
         <Route path="/variestado" element={<Variavel />}/>
-
+        <Route path="/calculo" element={<Calculo />}/>
+        
        {/*esse sempre vai ser o ultimo, pois ele vai pegar qualquer rota que não exista */}
         <Route path="*" element={<NotFound />} />
       </Routes>
