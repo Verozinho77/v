@@ -2,6 +2,9 @@ import './index.scss';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
+import Componentes from '../Componentes/index.jsx';   
+
+
 export default function Variavel() {
 
     const [cor, setCor] = useState('#c1dcfc');
@@ -27,6 +30,8 @@ export default function Variavel() {
 
     return (
         <div className="secao" style={{ backgroundColor: cor }}>
+<Componentes titulo="Variável de Estado"/>
+
 
             {/* Área do título */}
             <section className="titulo-area">

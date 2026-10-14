@@ -26,7 +26,8 @@ root.render(
         <Route path="/Contador" element={<Contador />} />
         <Route path="/variestado" element={<Variavel />}/>
         <Route path="/calculo" element={<Calculo />}/>
-        
+
+
        {/*esse sempre vai ser o ultimo, pois ele vai pegar qualquer rota que não exista */}
         <Route path="*" element={<NotFound />} />
       </Routes>

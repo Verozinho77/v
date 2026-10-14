@@ -70,9 +70,7 @@ export default function Calculo() {
 
       <input type="checkbox" checked={boolean} onChange={(e) => setBoolean(e.target.checked)} />
 
-            <Link to="/">
-                Voltar
-            </Link>
+          
 
         </div>
     );

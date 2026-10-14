@@ -1,5 +1,6 @@
 import './index.scss'
 import { Link } from 'react-router-dom';
+import Componentes from '../Componentes/index.jsx';   
 
 export default function Evento() {
 
@@ -20,9 +21,14 @@ export default function Evento() {
 
     }
 
+
     return (
 
+        
+
         <div className="eventin">
+
+            <Componentes titulo="Teste"/>
 
             <div className='caixa'>
 
